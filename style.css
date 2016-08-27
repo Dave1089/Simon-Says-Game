@@ -1,0 +1,238 @@
+body {
+	background: url("https://res.cloudinary.com/dvqntjypw/image/upload/v1470878104/Melamine-wood-005_simncm.png")
+}
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+
+.wrap {
+	width: 472px;
+	height: 472px;
+	border-radius: 100%;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	background-color: #333;
+	top: 10vh;
+	box-shadow: 0px 0px 12px #222;
+}
+
+.inner {
+	position: relative;
+	top: 12px;
+}
+
+.top {
+	margin-bottom: -4px;
+}
+
+.tl {
+	border-top-left-radius: 100%;
+}
+
+.tr {
+	border-top-right-radius: 100%;
+}
+
+.bl {
+	border-bottom-left-radius: 100%;
+}
+
+.br {
+	border-bottom-right-radius: 100%;
+}
+
+.push {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: grey;
+	border: 12px solid #333;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.unclick {
+	pointer-events: none;
+}
+
+.green {
+	background-color: #00a74a;
+	opacity:0.4;
+}
+
+.red {
+	background-color: #9f0f17;
+	opacity:0.4;
+}
+
+.yellow {
+	background-color: #e5e500;
+	opacity:0.4;
+}
+
+.blue {
+	background-color: blue;
+	opacity:0.4;
+}
+
+.circle {
+	position: absolute;
+	top: 23%;
+	left: 25%;
+	width: 220px;
+	height: 220px;
+	border-radius: 100%;
+	background-color: white;
+	border: 12px solid #333;
+}
+.writing {
+	color: #333;
+	font-size: 4em;
+	margin-top: 25px;
+	font-weight: bold;
+}
+
+.row {
+	width: 100%;
+}
+.screen {
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	width: 2em;
+	background-color: #660000;
+	color: #660000;
+	font-weight: bold;
+	border-radius: 20%;
+	border: 3px solid black;
+}
+
+.startbtn {
+	position: absolute;
+	background-color: red;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: 3px solid grey;
+	margin-left: 7.5em;
+	box-shadow: 0px 3px 6px #333;
+	/*cursor:pointer;*/
+	pointer-events: none;
+}
+
+.startbtn::after {
+	content: 'Start';
+	top: 1.5em;
+	right: 0;
+	position: absolute;
+}
+
+.strictbtn {
+	background-color: yellow;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: 3px solid grey;
+	margin-left: 10em;
+	box-shadow: 0px 3px 6px #333;
+	float: left;
+	/*cursor:pointer;
+	pointer-event:auto;*/
+	pointer-events: none;
+}
+
+.strictbtn::after {
+	content: 'Strict';
+	bottom: 4.7em;
+	right: 2em;
+	position: absolute;
+}
+
+.startbtn:active {
+	transform: translateY(2px);
+}
+
+.strictbtn:active {
+	background-color: #333;
+	;
+}
+
+.light {
+	background-color: black;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	border: 2px solid black;
+	margin-left: 12em;
+	margin-top: 1px;
+	float: left;
+	position: absolute;
+}
+
+
+/*Switch Toggle*/
+
+.toggler {
+	margin-top: 2em;
+	vertical-align: 0;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 25px;
+	vertical-align: -5px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #333;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
+}
