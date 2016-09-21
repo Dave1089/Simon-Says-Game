@@ -1,4 +1,4 @@
-# Simon-Says-Game
+## Simon-Says-Game
 Simon Says is a fun game that helps in exercising listening skills. This game is fairly easy, but it can quickly turn into a challenge, especially if playing in a large group. Although this game goes by many names worldwide, the fun, basic rules tend to remain the same.
 
 User is presented with a random series of button presses.Each time you input a series of button presses correctly, you see the same series of button presses but with an additional step.
